@@ -6,6 +6,12 @@
   4. Also, if(c>'Z') str+=ch-(26-k);
   
   subtracting backwards will give the rotation of the alphabets;
+ Most IMP:
+ 
+ 5. Java has function Character.isLetter("INPUT_TO_CHECK")
+  6. Character.isLowerCase("INPUT_TO_LOWER_CASE")
+  7. Character.isUpperCase("INPUT_TO_CHECK");
+  as need to skip the other symbols coming i the input straing of ours;  
   
   
   TC: O(N) as need to traverse all the characters of the given string;
