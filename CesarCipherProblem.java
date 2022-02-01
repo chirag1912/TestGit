@@ -60,6 +60,15 @@ public class Cesar_cipher {
 					}
 				}
 			}	
+			else if(Character.isDigit(ch)) {
+				int ch1=(int)ch;
+				int c=ch1+k;
+				if(c>9) {
+					str1+=ch1-9-k;
+				}else {
+					str1+=c;
+				}
+			}
 			
 				else {
 				str1+=ch;
