@@ -11,6 +11,7 @@ public class Main {
         
         
         ArrayList arrList=new ArrayList<>();
+        //ArrayList<String> arrList1=new ArrayList<>();
         arrList.add("Apple");
         arrList.add("Oranges");
         System.out.println(arrList);
