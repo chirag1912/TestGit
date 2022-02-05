@@ -14,7 +14,16 @@ public class Main {
         //ArrayList<String> arrList1=new ArrayList<>();
         arrList.add("Apple");
         arrList.add("Oranges");
+        arrList.add("Chiko");
         System.out.println(arrList);
+        
+        
+        int element = arr.get(2);
+ 
+        // Displaying element at specified index
+        // on console inside list
+        System.out.println("the element at index 2 is "
+                           + element);
         
         arrList.remove("Oranges");
         arrList.contains("Apple");
