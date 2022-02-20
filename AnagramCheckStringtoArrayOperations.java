@@ -14,3 +14,32 @@ class Solution {
         return Arrays.equals(str1,str2);
     }
 }
+
+//TC: O(N)
+//SC: O(1) as using hashTable and only 26 characters will be there; ascii-'a' willl give the number in range 0-26;
+class Solution {
+    public boolean isAnagram(String s, String t) {
+        
+        if(s.length()!=t.length()) return false;
+        
+        //using HashMap() to store the ount of each of the strings being identified;
+        int i=0;
+        // HashMap<Character,Integer> map=new HashMap<>();
+        int counter[]=new int[26];  //this is hashTable;
+        
+        //Catch being: do the -- and ++ for both the given string characters at the same time;
+        //And then another loop if used to check if values!=0 return false; should be fine;
+        while(i<s.length()){
+            counter[s.charAt(i)-'a']++;
+            counter[t.charAt(i)-'a']--;
+            i++;
+        }
+        
+        for(int ctr:counter){
+            if(ctr!=0){
+                return false;
+            }
+        }
+        return true;
+    }
+}
