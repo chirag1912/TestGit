@@ -1,3 +1,12 @@
+map.keySet() 
+    
+    for(char c: map.keySet()){
+        //traverse to check if the map has frequency pf more then one?
+    }
+
+    return new ArrayList(map.values()); will create a new ArrayList [] and return in the form of ArrayList<ArrayList<String>> type();
+
+
 //Check if given 2 strings are anagrams or not;
 
 //TC:O(nlogn);
