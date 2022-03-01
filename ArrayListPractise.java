@@ -1,5 +1,27 @@
 public class Main {
     public static void main(String[] args) {
+        
+        //Way it comes in the questions:
+        ArrayList<ArrayList<String>> listOLists = new ArrayList<ArrayList<String>>();
+           //List<List<Integer>> listOLists1 = new List<List<Integer>>();
+        ArrayList<ArrayList<Integer>> listOList1 = new ArrayList<ArrayList<Integer>>();
+        
+        ArrayList<String> singleList = new ArrayList<String>();
+        singleList.add("hello");
+        singleList.add("world");
+        listOLists.add(singleList);
+
+        ArrayList<String> anotherList = new ArrayList<String>();
+        anotherList.add("this is another list");
+        listOLists.add(anotherList);
+        
+        
+        ArrayList<Integer> List1 = new ArrayList<>();
+        listOList1.add(List1);
+        
+        return listOList1;        
+        
+        
         // Int[] arr=new arr;
         int[] arr=new int[10];
         // arr={1,2,3};
